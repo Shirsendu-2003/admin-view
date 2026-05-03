@@ -16,7 +16,7 @@ export default function LandingPage({
   useEffect(() => {
     const fetchViews = async () => {
       try {
-        const res = await axios.get("http://localhost:8081/api/admin/students/views");
+        const res = await axios.get("https://student-backend-h505.onrender.com/api/admin/students/views");
         setViews(res.data);
 
         // ✅ Calculate total
