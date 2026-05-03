@@ -1,0 +1,19 @@
+footer {
+  
+  background: #34495e;
+  color: #bdc3c7;
+  padding: 30px 0px 40px 0px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+   
+    font-size: 20px;
+  text-decoration: none;
+  padding-bottom: 5px;
+   min-height: 7vh;
+   
+}
+.footer-contener{
+  font-weight: 500;
+
+}
