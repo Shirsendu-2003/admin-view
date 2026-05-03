@@ -22,7 +22,7 @@ export default function AdminCellRegister({ onRegisterSuccess, onBack }) {
     }
 
     try {
-      const response = await axiosInstance.post("/auth/admincell/register", adminCell);
+      await axiosInstance.post("/auth/admincell/register", adminCell); // ✅ fixed
       setMessage("✅ Registration successful! Please login.");
       setError("");
       onRegisterSuccess();
@@ -35,6 +35,7 @@ export default function AdminCellRegister({ onRegisterSuccess, onBack }) {
   return (
     <div className="container">
       <h2 className="admin-log">🏫 Admin Cell Register</h2>
+
       {error && <p style={{ color: "red" }}>{error}</p>}
       {message && <p style={{ color: "green" }}>{message}</p>}
 
